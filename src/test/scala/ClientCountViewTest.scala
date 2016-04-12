@@ -79,5 +79,7 @@ class ClientCountViewTest extends FlatSpec with Matchers{
 
     count.size should be (1)
     count(0)(0) should be (Submission.dimensions("clientId").size)
+
+    sc.stop()
   }
 }
